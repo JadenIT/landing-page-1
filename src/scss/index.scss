@@ -1,0 +1,70 @@
+$primary: #ff0072;
+$second: #644cad;
+$third: #4426a8;
+
+@mixin mainGradient {
+  background: #0f0c29 !important; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e) !important; /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0f0c29,
+    #302b63,
+    #24243e
+  ) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+a{
+  text-decoration: none !important;
+  transition: 0.2s !important;
+  &:hover{
+    opacity: 0.5 !important;
+  }
+}
+
+p {
+  color: black !important;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+body::-webkit-scrollbar-track {
+  background : grey;
+}
+body::-webkit-scrollbar-thumb {
+  background : #c0c0c0;
+} 
+
+body{
+  background-color: #f8f9fa;
+}
+
+.card{
+  transition: 0.4s !important;
+  -webkit-transition: 0.4s !important;
+  &:hover{
+    box-shadow: 0 0 60px 0 black !important;;
+  }
+}
+
+.btn-primary{
+  background-color: #252e5b !important;
+  border: 0px solid #252e5b !important;
+  outline: #ff0072;
+}
+
+.mainImageOverlay {
+  @include mainGradient;
+  opacity: 0.8 !important;
+}
+
+.mainBackgroundOverlay {
+  background-image: url("../static/images/mainWallpaper.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+}

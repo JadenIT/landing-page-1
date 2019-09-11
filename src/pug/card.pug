@@ -1,0 +1,8 @@
+mixin card(title, text)
+    .card(style="box-shadow: 0 0 100px rgba(0,0,0,0.5)").m-3.rounded
+        .card-body
+            .card-title
+                p.font-weight-bold= title
+            .card-text
+                p.font-italic= text
+            button(href="#" class="btn btn-primary") Lorem ipsum

@@ -1,0 +1,83 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        link(rel='stylesheet' href='./index.css')
+        link(href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet")
+        script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+        title Landing
+    body
+        include card
+
+    .home.position-relative(data-aos="fade-up")
+        include gradient.pug
+        .container(style='z-index: 1 !important').position-relative.pt-4.pb-4
+            include menu.pug
+            .home__title
+                h1.mt-5.text-center.text-white(style='font-size: 50px;') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                h1.mt-5.text-center.text-white(style='font-size: 25px;') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+            .home__news.mt-5.pt-5.card-group
+                +card('Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut')
+                +card('Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut')
+                +card('Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut')
+
+    .about#first(data-aos="fade-up")
+        .container
+            .row.p-0.m-0.justify-conent-between.h-1
+                .col-lg-6.align-self-center.p-5
+                    .row.justify-content-center
+                        h1.text-center Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt ut labore et dolore magna.
+                .col-lg-6.align-self-center.p-5
+                    .row.justify-content-center
+                        img(class='img-fluid' src='../static/images/logo3.png')
+
+    .statistic.position-relative#second(data-aos="fade-up")
+        include gradient.pug
+        .container(style='z-index: 1 !important').position-relative
+            .col-12.pt-5
+                h1.text-white.text-center Lorem ipsum dolor sit amet, consectetur
+            .col-12.pt-3.pb-4
+                .row
+                    .col-lg-4.align-self-center.align-self-stretch.p-3
+                        .col-12
+                            h3.text-center.text-white 35 trillion
+                        .col-12
+                            h5.text-center.text-white Lorem ipsum dolor
+                    .col-lg-4.align-self-center.align-self-stretch.p-3
+                        .col-12
+                            h3.text-center.text-white 500 million
+                        .col-12
+                            h5.text-center.text-white Lorem ipsum dolor
+
+                    .col-lg-4.align-self-center.align-self-stretch.p-3
+                        .col-12
+                            h3.text-center.text-white 7 million
+                        .col-12
+                            h5.text-center.text-white Lorem ipsum dolor
+
+    .offer(data-aos="fade-up")
+        .container.pt-5.pb-5
+            .row.justify-content-center
+                .col-lg-6 
+                    h3(style='color: #424A4F;').text-center.m-1 Lorem ipsum dolor
+                    p(style='color: #424A4F;').text-center Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    .text-center
+                        button.btn.btn-primary.m-1 Lorem ipsum dolor
+                    p.text-primary.text-center.m-1 Lorem ipsum dolor
+
+    .footer.position-relative
+        include gradient.pug
+        .container(style='z-index: 1 !important').position-relative
+            include menu.pug
+
+    script.
+        AOS.init();
+
+
+
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous")
+
