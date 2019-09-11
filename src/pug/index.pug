@@ -10,7 +10,7 @@ html(lang="en")
     body
         include card
 
-    .home.position-relative
+    .home.position-relative(data-aos="fade-up")
         include gradient.pug
         .container(style='z-index: 1 !important').position-relative.pt-4.pb-4
             include menu.pug
@@ -23,7 +23,7 @@ html(lang="en")
                 +card('Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut')
                 +card('Lorem ipsum', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut')
 
-    .about#first
+    .about(data-aos="fade-up")
         .container
             .row.p-0.m-0.justify-conent-between.h-1
                 .col-lg-6.align-self-center.p-5
@@ -33,7 +33,7 @@ html(lang="en")
                     .row.justify-content-center
                         img(class='img-fluid' src='../static/images/logo3.png' data-aos="fade-up")
 
-    .statistic.position-relative#second
+    .statistic.position-relative(data-aos="fade-up")
         include gradient.pug
         .container(style='z-index: 1 !important').position-relative
             .col-12.pt-5
@@ -57,7 +57,7 @@ html(lang="en")
                         .col-12
                             h5.text-center.text-white(data-aos="fade-up") Lorem ipsum dolor
 
-    .offer
+    .offer(data-aos="fade-up")
         .container.pt-5.pb-5
             .row.justify-content-center
                 .col-lg-6 
